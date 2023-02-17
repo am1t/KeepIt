@@ -11,5 +11,10 @@
 		   </main>
       {{ partial "footer.html" . }}
      </div>
+     {{ partial "custom_footer.html" . }}
+
+    {{ range .Site.Params.plugins_js }}
+      <script src="{{ . }}"></script>
+    {{ end }}
   </body>
 </html>

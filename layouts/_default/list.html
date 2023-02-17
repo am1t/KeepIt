@@ -5,7 +5,8 @@
     {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
     <h3>{{ .Key }}</h3>
 
-    {{ range .Pages }}
+    {{ $pages = where .Site.RegularPages "Type" "post" }}
+    {{ range $pages }}
     <article class="archive-item">
         <a href="{{ .RelPermalink }}" class="archive-item-link">{{ .Title }}</a>
         <span class="archive-item-date">

@@ -1,0 +1,39 @@
+{
+    "paginate": 10,
+    "pygmentsCodeFences": true,
+    "pygmentsCodefencesGuessSyntax": true,
+    "menu": {
+        "main": [
+                {
+                    "name":"Blog",
+                    "url":"/post",
+                    "weight":1 
+                },
+                {
+                    "name":"Archive",
+                    "url":"/archive",
+                    "weight":2
+                },
+                {
+                    "name":"About",
+                    "url":"/about",
+                    "weight":3 
+                }
+            ]
+        }
+    },
+    "params": {
+        "since": 2007,
+        "subtitle": "Thoughts from Amit Gawande",
+        "social" : {
+            "twitter": "_am1t",
+            "github": "am1t",
+            "microblog": "amit",
+            "linkedin": "",
+            "mastodon": ""
+        },
+        "avatar": "https://micro.blog/amit/avatar.jpg",
+        "doNotLoadAnimations": false,
+        "fullPostContent": false
+    }
+}
